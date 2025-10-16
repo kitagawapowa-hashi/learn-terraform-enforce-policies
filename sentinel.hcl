@@ -11,14 +11,14 @@ module "tfconfig-functions" {
     source = "../common-functions/tfconfig-functions/tfconfig-functions.sentinel"
 }
   
-#policy "allowed-terraform-version" {
-#  enforcement_level = "soft-mandatory"
-#}
+policy "allowed-terraform-version" {
+  enforcement_level = "soft-mandatory"
+}
 
 #policy "less-than-100-month" {
 #  enforcement_level = "soft-mandatory"
 #}
 
-policy "restrict-gce-machine-type" {
-  enforcement_level = "advisory"
-}
+#policy "restrict-gce-machine-type" {
+#  enforcement_level = "advisory"
+#}
